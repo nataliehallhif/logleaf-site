@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Logleaf Privacy Policy</title>
+<style>
+:root{--paper:#FBF9FA;--ink:#1B1519;--muted:#5E5359;--rule:#E6DFE3;--accent:#AD1478;--code:#F2ECEF}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1619;--ink:#F4EEF1;--muted:#B7AAB1;--rule:#3A3237;--accent:#F26AB8;--code:#2A2328}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+.sheet{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+.mast{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;border-bottom:2px solid var(--ink);padding-bottom:.6rem;margin-bottom:2rem}
+.mast b{font-weight:800;letter-spacing:.02em;text-transform:uppercase;font-size:.85rem}
+.mast nav a{color:var(--muted);text-decoration:none;font-size:.85rem;margin-left:1rem}
+.mast nav a[aria-current]{color:var(--accent);font-weight:700}
+h1{font-size:2.1rem;line-height:1.15;margin:0 0 .4rem;font-weight:800;letter-spacing:-.01em}
+h2{font-size:1.15rem;margin:2.2rem 0 .6rem;padding-top:1rem;border-top:1px solid var(--rule)}
+h3{font-size:1.02rem;margin:1.8rem 0 .4rem}
+p,ul{margin:0 0 1rem}
+ul{padding-left:1.2rem}
+li{margin:.25rem 0}
+li::marker{color:var(--accent)}
+a{color:var(--accent);text-underline-offset:2px}
+code{font:.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--code);padding:.08em .35em;border-radius:4px}
+hr{border:0;border-top:1px solid var(--rule);margin:2.5rem 0 1.5rem}
+.lede{color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="sheet">
+<header class="mast"><b>Logleaf</b><nav><a href="./" aria-current="page">Privacy</a><a href="support.html">Support</a></nav></header>
+<h1>Logleaf Privacy Policy</h1>
+<p class="lede">Effective October 2, 2026</p>
+<p>Logleaf is a daily log for iPhone. I am Natalie Hall, the independent developer who publishes it, and this page explains what happens to the things you write in it. "I" and "me" mean me as the developer; "the app" means Logleaf on your iPhone.</p>
+<h2>1. The whole policy in one paragraph</h2>
+<p>What you write in Logleaf is saved on your iPhone and nowhere else. The app has no account, no server and no code that connects to the internet, so your entries are never sent to me or to anyone else. There is no analytics, no tracking and no third-party code inside it. On the App Store, its privacy details read "Data Not Collected". The sections below cover the details and the few edge cases.</p>
+<h2>2. What the app saves, and where</h2>
+<p>Logleaf keeps your log in a database file in the app's private storage on your iPhone. iOS keeps that storage closed to other apps. The file holds:</p>
+<ul><li>every line you write: its text, whether it is a task, an event or a note, its state (open, done, moved, scheduled for later, dropped), the priority mark, and the day, month or list it belongs to;</li><li>for tasks you carry forward: how many times each one was moved, and a link between the old line and its new copy, so the earlier day can show where the task went;</li><li>the time each line was added, used only to keep lines in the order you wrote them;</li><li>the names of your lists.</li></ul>
+<p>Apart from the log, the app remembers four settings: whether you finished the short introduction, whether the evening reminder is on, and the hour and minute you chose for it.</p>
+<p>This version has no iCloud sync: the log stays on the iPhone where you wrote it. If the database file is ever damaged and cannot be opened, the app moves the damaged copy aside within the same private storage instead of erasing it, and starts a fresh log. That copy is removed together with the app.</p>
+<p>I have no access to any of it.</p>
+<h2>3. What the app does not do</h2>
+<ul><li>It does not connect to the internet. Settings contains two links, Privacy and Support; tapping one hands the address to your browser, which loads the page. The app makes no request of its own.</li><li>It has no sign-in, no account and no profile.</li><li>It contains no analytics, advertising, crash-reporting, social-media or other third-party SDKs. All of its code was written for this app.</li><li>It does not read advertising identifiers or create any identifier tied to you or your device, and it does not follow you across other companies' apps or websites. That is why it never shows the iOS prompt asking for permission to track.</li><li>It does not ask for your location, contacts, photos, camera, microphone, calendars, health data or files.</li><li>Nobody buys or receives information about you from Logleaf, because the app never holds any to give.</li></ul>
+<h2>4. The evening reminder</h2>
+<p>The reminder is off until you switch it on in Settings. Only at that moment does iOS ask whether Logleaf may send notifications. If you decline, the switch turns itself back off and nothing is scheduled.</p>
+<p>When the reminder is on, the app gives iOS one repeating local notification for the time you picked. iOS delivers it on the device itself; no push server is involved. The notification shows the app name and one fixed sentence. It never contains anything you have written. Switching the reminder off removes the scheduled notification.</p>
+<h2>5. When you export</h2>
+<p>Today, Month and every list have an export button. It turns that page into plain text and opens the standard iOS share sheet, where you choose the destination: Mail, Notes, Files, AirDrop or any other app on your iPhone. Nothing leaves the app until you make that choice. After that, the text is handled by the app or person you sent it to, under their own terms. Logleaf keeps no record of what you shared or where it went.</p>
+<h2>6. Device backups and a new iPhone</h2>
+<p>If iCloud Backup is on, or you back up your iPhone to a computer, iOS includes Logleaf's storage in that backup, as it does for most apps. When you set up a new iPhone from such a backup, your log comes with it. These backups belong to your Apple Account or your computer and are governed by Apple's terms and your own settings. I cannot open them.</p>
+<h2>7. What Apple tells me</h2>
+<p>Apple gives every developer a dashboard in App Store Connect. Mine shows figures such as how many times Logleaf was downloaded in each country, along with public ratings and reviews.</p>
+<p>iPhone owners can also opt in to sending diagnostics to developers, under Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements &gt; Share With App Developers. When that option is on, Apple may forward crash logs and usage figures for Logleaf to me after removing anything that identifies the person. They help me track down crashes, and I use them for nothing else. The option belongs to iOS, and you can switch it off there whenever you like.</p>
+<h2>8. Emails to me</h2>
+<p>Writing to <a href="mailto:ceo@nataliehallhif.pics">ceo@nataliehallhif.pics</a> is the one way information about you can reach me: your address, your name if your mail app includes it, and the text of your message. I read it, use it for the reply, and do not add it to any list or pass it to anyone. When the conversation has run its course, I delete it; tell me if you would like that done right away.</p>
+<p>For readers in the European Economic Area or the United Kingdom: the legal basis I rely on is legitimate interest, namely answering the person who wrote.</p>
+<h2>9. Deleting your information</h2>
+<ul><li>A single line: swipe it to the left and tap Delete.</li><li>A whole list: in Lists, swipe the list to the left and tap Delete. The lines inside it are deleted with it.</li><li>Everything: delete Logleaf from your iPhone. iOS erases the app's storage, including the log, any set-aside copy and the four settings. Copies inside earlier device backups stay there until those backups are replaced or deleted (see section 6).</li></ul>
+<p>I hold no copy of your log, so no request to me is needed. For emails you have sent me, see section 8.</p>
+<h2>10. Children</h2>
+<p>Logleaf is an everyday organizer meant for a general audience. It is not a product aimed at children and is not listed in the Kids category. Since the app gathers no personal information at all, it gathers none from children under 13 either. Nothing in it lets people talk to each other or publish anything, and its only links are the two pages of this website.</p>
+<h2>11. Your rights</h2>
+<p>Privacy laws give people control over what businesses know about them. Under the General Data Protection Regulation (EU and UK), the California Consumer Privacy Act and comparable laws of other US states, that control includes asking for access or a copy, correction, deletion, restriction or objection, and refusing the sale or sharing of your information.</p>
+<p>Applied to Logleaf: the app gives me no personal data, so a request about your log would find nothing on my side, and nothing is ever sold or shared. Your log is managed by you, on your iPhone (section 9). Emails are different. If you have written to me, you can make any of the requests above about that correspondence at the address below, and it will have no effect on how I deal with you. In the EEA and the UK you also have the right to complain to a data protection authority.</p>
+<h2>12. Changes to this policy</h2>
+<p>This page describes Logleaf 1.0 and any later version that works the same way. Should an update ever handle information differently, the new text will be posted here, with a new date at the top, before that update can be downloaded, and the privacy details on Logleaf's App Store page will be revised to match. Earlier texts of this page are available on request.</p>
+<h2>13. Governing law</h2>
+<p>This policy is governed by the laws of the State of Florida, United States. This does not take away any protection you have under the law of the country where you live.</p>
+<h2>14. Contact</h2>
+<p>Natalie Hall, Florida, United States<br>Email: <a href="mailto:ceo@nataliehallhif.pics">ceo@nataliehallhif.pics</a></p>
+<p>Answers to common questions: <a href="https://nataliehallhif.github.io/logleaf-site/support.html">Logleaf Support</a></p>
+</main>
+</body>
+</html>

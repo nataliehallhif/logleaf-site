@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Logleaf Support</title>
+<style>
+:root{--paper:#FBF9FA;--ink:#1B1519;--muted:#5E5359;--rule:#E6DFE3;--accent:#AD1478;--code:#F2ECEF}
+@media (prefers-color-scheme:dark){:root{--paper:#1A1619;--ink:#F4EEF1;--muted:#B7AAB1;--rule:#3A3237;--accent:#F26AB8;--code:#2A2328}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}
+.sheet{max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+.mast{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;border-bottom:2px solid var(--ink);padding-bottom:.6rem;margin-bottom:2rem}
+.mast b{font-weight:800;letter-spacing:.02em;text-transform:uppercase;font-size:.85rem}
+.mast nav a{color:var(--muted);text-decoration:none;font-size:.85rem;margin-left:1rem}
+.mast nav a[aria-current]{color:var(--accent);font-weight:700}
+h1{font-size:2.1rem;line-height:1.15;margin:0 0 .4rem;font-weight:800;letter-spacing:-.01em}
+h2{font-size:1.15rem;margin:2.2rem 0 .6rem;padding-top:1rem;border-top:1px solid var(--rule)}
+h3{font-size:1.02rem;margin:1.8rem 0 .4rem}
+p,ul{margin:0 0 1rem}
+ul{padding-left:1.2rem}
+li{margin:.25rem 0}
+li::marker{color:var(--accent)}
+a{color:var(--accent);text-underline-offset:2px}
+code{font:.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--code);padding:.08em .35em;border-radius:4px}
+hr{border:0;border-top:1px solid var(--rule);margin:2.5rem 0 1.5rem}
+.lede{color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="sheet">
+<header class="mast"><b>Logleaf</b><nav><a href="./">Privacy</a><a href="support.html" aria-current="page">Support</a></nav></header>
+<h1>Logleaf Support</h1>
+<p class="lede">Logleaf is a daily log for iPhone: one line per entry, a mark for every line, and a short review of the tasks you did not finish.</p>
+<h2>Contact</h2>
+<p>Email <strong><a href="mailto:ceo@nataliehallhif.pics">ceo@nataliehallhif.pics</a></strong>. I answer support messages myself, usually within a few days.</p>
+<p>To help me reproduce a problem, mention your iPhone model, your iOS version, the Logleaf version (Settings &gt; About inside the app) and the steps that led to it. A screenshot helps too. Please do not send your whole log unless I ask for a specific part of it.</p>
+<h2>Questions and answers</h2>
+<h3>What do the marks mean?</h3>
+<p>A filled dot is an open task, a cross is a done task, a ring is an event and a short dash is a note. An asterisk in front of a line marks it as a priority. Three more marks show how a task ended: <code>&gt;</code> moved forward, <code>&lt;</code> scheduled for later, and a struck-through dot for dropped. Tap a task's mark to switch it between open and done. The same key is in Settings &gt; How it works.</p>
+<h3>How does carrying unfinished tasks work?</h3>
+<p>When tasks are still open on an earlier day, Today shows a strip with their number. Tap Review and the tasks come up one card at a time, oldest first. For each one, pick:</p>
+<ul><li><strong>Move to today</strong>: the task gets a new line on today. The earlier day keeps the original with a <code>&gt;</code> mark, so you can still see where it came from. The new line shows how many times the task has been moved.</li><li><strong>Later</strong>: choose a month, or a specific date, up to a year ahead. The original gets a <code>&lt;</code> mark and the task waits there.</li><li><strong>Drop</strong>: the task is crossed off and does not come back.</li></ul>
+<p>Back undoes your last choice. Move all moves every remaining task to today in one step, after asking you to confirm. You can close the review at any point; the choices you already made are kept.</p>
+<p>Month works the same way for tasks you wrote for a whole month: at the start of a new month it offers to move last month's open ones into the current month. Only tasks are carried; events and notes stay on their day.</p>
+<h3>Can I write on a past or future day?</h3>
+<p>Yes. Use the arrows next to the date to step to any day and add lines there. Future holds the next twelve months; add a line to a month, or pick an exact date for it. A line for a month appears in Month when that month comes; a line with a date appears on that day.</p>
+<h3>When does a new day start?</h3>
+<p>At midnight in your iPhone's current time zone. Days are stored as calendar dates, so traveling or a daylight saving change does not shift your lines.</p>
+<h3>Where is my log stored?</h3>
+<p>Only on your iPhone, in the app's private storage. Logleaf has no account and no server and does not connect to the internet. It is included in your iPhone backups (iCloud Backup or a computer backup) like other app data. Details: <a href="https://nataliehallhif.github.io/logleaf-site/">Privacy Policy</a>.</p>
+<h3>Does it sync with iCloud or my other devices?</h3>
+<p>Not in this version. The log lives on the iPhone where you write it. To move it to a new iPhone, set the new phone up from a backup of the old one.</p>
+<h3>How do I export my log?</h3>
+<p>Tap the share button at the top of Today or Month, or inside a list. Logleaf turns that page into plain text and opens the iOS share sheet, where you can send it to Mail, Notes, Files or any other app. The text uses simple marks that read well anywhere: <code>[ ]</code> open, <code>[x]</code> done, <code>[&gt;]</code> moved, <code>[&lt;]</code> scheduled, <code>[~]</code> dropped, <code>o</code> event, a line with no mark is a note, <code>!</code> priority, and <code>(x2)</code> for a task moved twice.</p>
+<h3>How do I set up the evening reminder?</h3>
+<p>Open Settings (the gear at the top), switch on Evening reminder, and allow notifications when iOS asks. It is set to 8:00 PM; change the time in the same place. The notification shows a single short line and never includes your entries. Tapping it opens Today.</p>
+<h3>I tapped "Don't Allow" and the reminder will not turn on.</h3>
+<p>iOS remembers that answer. In Logleaf's Settings, tap Open Settings under the reminder, or open the iPhone Settings app &gt; Notifications &gt; Logleaf and turn on Allow Notifications. Then switch the reminder on again in Logleaf.</p>
+<h3>How do I delete entries, or everything?</h3>
+<p>Swipe a line to the left and tap Delete. To remove a list together with its lines, swipe the list to the left in Lists and tap Delete. To erase everything, delete the Logleaf app from your iPhone: iOS removes all of its data with it. Older iPhone backups may still contain a copy until they are replaced.</p>
+<h3>Which languages does Logleaf support?</h3>
+<p>English, German, French, Spanish, Portuguese (Brazil), Russian and Japanese. The app follows your iPhone's language. To use a different language just for Logleaf, open the iPhone Settings app, find Logleaf (under Apps on iOS 18 and later) and choose Language.</p>
+<h3>What do I need to run it?</h3>
+<p>An iPhone with iOS 17 or later. Logleaf works fully offline.</p>
+<hr>
+<p><a href="https://nataliehallhif.github.io/logleaf-site/">Privacy Policy</a></p>
+<p>© 2026 Natalie Hall</p>
+</main>
+</body>
+</html>
